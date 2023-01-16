@@ -1,0 +1,49 @@
+body {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.nopadding {
+    padding-top: 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container.no-margin {
+    padding-bottom: 0;
+}
+
+
+:focus {
+    outline: none;
+}

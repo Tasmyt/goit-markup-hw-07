@@ -1,0 +1,16 @@
+@mixin width-column($number) {
+    flex-basis: calc(100%/$number - 30px);
+}
+
+$icon-hang: 'antenna', 'clock', 'diagram', 'astronaut';
+@mixin generateIcons($iconList, $number) {
+    @each $iconName in $iconList {
+        $number: calc($number + 1);
+        .icon__hang:nth-child(#{$number}):before {
+                content: '';
+                background-image: url('../images/#{$iconName}.svg');
+            }
+    }
+}
+
+@include generateIcons($icon-hang, 0);

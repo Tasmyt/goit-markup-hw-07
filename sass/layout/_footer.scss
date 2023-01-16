@@ -1,0 +1,77 @@
+.footer {
+    display: flex;
+    align-items: baseline;
+
+    &__font {
+        padding: 60px 0;
+        background-color: $color-bg-dark;
+        font-size: 14px;
+        line-height: 1.71;        
+        }
+
+    &__list>li:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: $color-background;
+        text-decoration: none;
+    }
+
+    &__social {
+        margin-left: 70px;
+
+        &--h2 {
+            margin: 0 0 20px 0;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: $color-background;
+        }
+
+        &--box {
+            display: flex;
+        }
+        &--box>li {
+            margin-right: 10px;
+        }
+    }
+
+    &__modal {
+        margin-left: auto;
+    }
+
+    &__email-input {
+        display: flex;
+    }
+
+    &__email {
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        padding-left: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: $color-bg-dark;
+    
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.send {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    fill: $color-background;
+}
