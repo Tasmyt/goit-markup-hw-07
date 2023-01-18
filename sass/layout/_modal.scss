@@ -50,7 +50,7 @@
     
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:focus+.icon__form, &:hover+.icon__form {
+        &:focus+.form__icon, &:hover+.form__icon {
             fill: $color-activ;
             }
 
@@ -58,6 +58,12 @@
         &:hover {
             border-color: $color-activ;   
             }
+    }
+
+    &__button {
+        display: block;
+        padding: 10px 52px;
+        margin: 0 auto;
     }
 }
 
@@ -80,17 +86,35 @@
         min-height: 120px;
     }
 
-    &__contract {
-        position: relative;
-        display: flex;
-        margin: 20px auto 30px auto;
-        justify-content: center;
+   &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
 
-        &--label {
-            line-height: 1.17;
-            color: $color-minor;
-        }
-    }
+    fill: $color-primary;
 
-   
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+}
+   .contract {
+       position: relative;
+       display: flex;
+       margin: 20px auto 30px auto;
+       justify-content: center;
+
+       &__label {
+           line-height: 1.17;
+           color: $color-minor;
+       }
+
+       &__icon {
+        display: inline-block;
+        margin-right: 8px;
+    
+        width: 16px;
+        height: 15px;
+        border: 2px solid $color-primary;
+        border-radius: 2px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       }
 }

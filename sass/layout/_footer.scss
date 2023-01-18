@@ -12,11 +12,25 @@
     &__list>li:not(:last-child) {
             margin-bottom: 9px;
         }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        line-height: 1.71;
+        font-style: normal;
+    }
+
+    &__link--adress {
+        color: $color-background;
+        text-decoration: none;
+        line-height: 1.71;
+        font-style: normal;
+    }
     
     &__logo {
         display: block;
         margin-bottom: 20px;
-        font-family: "Raleway";
+        font-family: $font-minor;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -24,24 +38,7 @@
         text-decoration: none;
     }
 
-    &__social {
-        margin-left: 70px;
-
-        &--h2 {
-            margin: 0 0 20px 0;
-            font-size: 14px;
-            line-height: 1.14;
-            text-transform: uppercase;
-            color: $color-background;
-        }
-
-        &--box {
-            display: flex;
-        }
-        &--box>li {
-            margin-right: 10px;
-        }
-    }
+    
 
     &__modal {
         margin-left: auto;
@@ -66,12 +63,53 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
+
+    &__button {
+        padding: 10px 62px 10px 28px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
 }
 
-.send {
-    position: absolute;
-    top: 50%;
-    right: 28px;
-    transform: translateY(-50%);
-    fill: $color-background;
+.footer-social {
+    margin-left: 70px;
+
+    &__h2 {
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $color-background;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__box>li {
+        margin-right: 10px;
+    }
+
+    &__link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: $color-background;
+        background-color: $color-footer-social;
+    
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+    
+    &__link:hover,
+    &__link:focus {
+        background-color: $color-activ;
+        color: $color-background;
+    }
 }

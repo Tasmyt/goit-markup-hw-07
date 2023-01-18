@@ -24,79 +24,91 @@
     }
 }
 
-.hang {
-    width: 270px;
-    margin: 0;
-    font-weight: 400;
-    line-height: 1.71;
-    color: $color-minor;
-    text-transform: none;
+.preference {
+    flex-wrap: nowrap;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 
-    &__title {
-        flex-wrap: nowrap;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-
-        &>li {
-            width: 270px;
-        }
-
-        & h3 {
-            margin-top: 30px;
-            margin-bottom: 10px;
-            font-weight: 700;
-            font-size: 14px;
-        }
+    &>li {
+        width: 270px;
     }
+
+    & h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    &__icon::before {
+        content: '';
+        display: block;
+        height: 120px;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        background-color: $color-background-section;
+    }
+
+    &__rubric {
+        width: 270px;
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.71;
+        color: $color-minor;
+        text-transform: none;
+    }
+
 }
 
-.title {
+.section__title {
     margin-top: 0;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
-    &__team {
-        padding-bottom: 94px;
-        padding-top: 94px;
-        background-color: $color-background-section;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
 }
-
-    &__team h3 {
-        margin: 0 0 10px;
-        font-weight: 500;
-        font-size: 16px;
-    }
-}
-
 .team {
-    margin: 0 0 16px;
-    font-weight: 400;
-    color: $color-minor;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    background-color: $color-background-section;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 
+    & h3 {
+            margin: 0 0 10px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    
+    &__rubric {
+        margin: 0 0 16px;
+        font-weight: 400;
+        color: $color-minor;
+    }
     &__bordure {
-    width: 270px;
-    background: $color-background;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+        width: 270px;
+        background: $color-background;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
     }
 
     &__box {
-    padding: 30px 32px;
+        padding: 30px 32px;
     }
 
     &__list {
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
 }
+
+
 
 .wrapper {
     position: relative;

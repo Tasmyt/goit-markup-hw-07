@@ -11,7 +11,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 
-    &:checked+.icon__contract {
+    &:checked+.contract__icon {
             background-color: $color-activ;
             background-image: url(../images/icons/icon-check.svg);
             background-size: contain;
@@ -19,8 +19,8 @@
             border-color: $color-activ;
     }
 
-    &:focus+.icon__contract,
-    &:hover+.icon__contract {
+    &:focus+.contract__icon,
+    &:hover+.contract__icon {
         border: 2px solid $color-activ;
     }
 }
